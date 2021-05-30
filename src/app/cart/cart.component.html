@@ -4,3 +4,7 @@
   <span>{{ item.name }}</span>
   <span>{{ item.price | currency : 'XAF' }}</span>
 </div>
+
+<div *ngIf="items.length > 0">
+  <button (click)="clearCart()">Clear Cart!</button>
+</div>
